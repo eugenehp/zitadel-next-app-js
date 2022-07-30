@@ -79,43 +79,34 @@ Let’s continue and set up a new account on ZITADEL, so we can use credential k
 Head to [https://zitadel.cloud](https://zitadel.cloud) and create a new account:
 
 1. Sign up form on zitadel.cloud
-
-![Sign up form on zitadel.cloud](https://i.imgur.com/raEHpOa.png)
+    ![Sign up form on zitadel.cloud](https://i.imgur.com/raEHpOa.png)
 
 2. ZITADEL organization has been created
-
-![ZITADEL organization has been created](https://i.imgur.com/2MjHAwm.png)
+    ![ZITADEL organization has been created](https://i.imgur.com/2MjHAwm.png)
 
 3. Activate the user account
-
-![Activate user account](https://i.imgur.com/wCDTwT2.png)
+    ![Activate user account](https://i.imgur.com/wCDTwT2.png)
 
 4. User activated
-
-![User activated](https://i.imgur.com/DAoV3LS.png)
+    ![User activated](https://i.imgur.com/DAoV3LS.png)
 
 5. ⚠️ Skip multifactor set up for now, but activate it before going to **production**!
-![Skip multifactor set up for now, but activate it before going to production!](https://i.imgur.com/eNcKjGl.png)
+    ![Skip multifactor set up for now, but activate it before going to production!](https://i.imgur.com/eNcKjGl.png)
 
 6. The view inside ZITADEL dashboard
-
-![The view inside ZITADEL dashboard](https://i.imgur.com/IO5SOb8.png)
+    ![The view inside ZITADEL dashboard](https://i.imgur.com/IO5SOb8.png)
 
 7. Click on `+New` and create a new instance:
-
-![Creating new instance called `zitadel-instance`](https://i.imgur.com/M4oCkq9.png)
+    ![Creating new instance called `zitadel-instance`](https://i.imgur.com/M4oCkq9.png)
 
 8. Confirming new instance
-
-![Confirming new instance](https://i.imgur.com/ejipzab.png)
+    ![Confirming new instance](https://i.imgur.com/ejipzab.png)
 
 9. New instance has been created
-
-![New instance has been created](https://i.imgur.com/NYXNuKw.png)
+    ![New instance has been created](https://i.imgur.com/NYXNuKw.png)
 
 10. Click on `go to my instance`
-
-![Overview of a newly created instance](https://i.imgur.com/5bhrJOV.png)
+    ![Overview of a newly created instance](https://i.imgur.com/5bhrJOV.png)
 
 Now grab the instance's domain name from a previous screenshot, it should have this format `https:/[your-domain]-[random-string].zitadel.cloud` and in my example, it is `https://zitadel-instance-w2iqk1.zitadel.cloud`.
 
@@ -276,17 +267,17 @@ Great job, you made it so far! Let's recap what you've done so far.
 
 **Here's a detailed description:**
 
-1. User goes to http://localhost:3000/
+1. User goes to [http://localhost:3000/](http://localhost:3000/)
 
-2. next-auth redirects to http://localhost:3000/api/auth/zitadel
+2. next-auth redirects to [http://localhost:3000/api/auth/zitadel](http://localhost:3000/api/auth/zitadel)
 
-3. API route redirects to https://zitadel-instance-w2iqk1.zitadel.cloud
+3. API route redirects to [https://zitadel-instance-w2iqk1.zitadel.cloud](https://zitadel-instance-w2iqk1.zitadel.cloud)
 
 4. Authorize User using predefined Identity Providers in ZITADEL
 
-5. Redirect to http://localhost:3000/api/auth/callback/zitadel
+5. Redirect to [http://localhost:3000/api/auth/callback/zitadel](http://localhost:3000/api/auth/callback/zitadel)
 
-6. Redirect back to http://localhost:3000/ with the authorized next-auth session
+6. Redirect back to [http://localhost:3000/](http://localhost:3000/) with the authorized next-auth session
 
 ## Conclusion
 
