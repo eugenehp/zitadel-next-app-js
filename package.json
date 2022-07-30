@@ -18,5 +18,9 @@
     "@types/node": "^18.6.2",
     "eslint": "8.20.0",
     "eslint-config-next": "12.2.3"
+  },
+  "author": {
+    "name" : "Eugene Hauptmann",
+    "url" : "http://github.com/eugenehp/"
   }
 }
