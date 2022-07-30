@@ -2,13 +2,13 @@
 
 ## Introduction
 
-[Next.js](https://nextjs.org) is a modern JavaScript website framework created and maintained by Vercel. Modern because instead of letting developers build one type of a website, it lets developers design Single Page Application ([SPA](https://en.wikipedia.org/wiki/Single-page_application)) with the capabilities of Static Site Generation (SSG) and Server-Side Rendering (SSR) and deploy it to different types of hosting providers, including Vercel, Netlify, Amazon Web Services, and so on.
+[Next.js](https://nextjs.org) is a modern JavaScript website framework created and maintained by Vercel. it  is modern because instead of letting developers build one type of a website, it lets developers design Single Page Application ([SPA](https://en.wikipedia.org/wiki/Single-page_application)) with the capabilities of Static Site Generation (SSG) and Server-Side Rendering (SSR) and deploy it to different types of hosting providers, including Vercel, Netlify, Amazon Web Services, and so on.
 
-Going with Next.js will let you focus on your product in place, instead of setting up development infrastructure, Next.js already comes with the development toolkit out of the box and provides you a development server to easily run code modifications in the browser, while you edit the codebase.
+Using Next.js will let you focus on your product in place, instead of setting up development infrastructure, because Next.js already comes with the development toolkit out of the box and provides you with a development server to easily run code modifications in the browser, while you edit the codebase.
 
-Next.js is a modern framework, so it focuses on code optimization and performance optimization for better User Experience (UX) and Developer Experience (DX). This includes some advanced features like code splitting, Hot Module Replacement ([HMR](https://webpack.js.org/concepts/hot-module-replacement/)), and others.
+Next.js is a modern framework, so it focuses on code optimization and performance optimization for better User Experience (UX) and Developer Experience (DX). This includes some advanced features like code splitting, Hot Module Replacement ([HMR](https://webpack.js.org/concepts/hot-module-replacement/)), among others.
 
-Next.js has a great and large open source community with a rapid release cycle backed by Vercel, as well as a wide ecosystem of a variety of plugins built for Node.js and React, where both are used to deliver a highly performant Next.js experience.
+Next.js has a large open source community with a rapid release cycle backed by Vercel, as well as a wide ecosystem of a variety of plugins built for Node.js and React, where both are used to deliver a highly performant Next.js experience.
 
 In this tutorial, you will learn how to set up a Next.js project using JavaScript and integrate with [ZITADEL Identity management](https://github.com/zitadel/zitadel), an open-source version of Auth0, and a security layer for your web application.
 
@@ -16,19 +16,19 @@ In this tutorial, you will learn how to set up a Next.js project using JavaScrip
 
 Next.js is a hybrid web framework that allows building statically generated pages and “hydrate” them with client-side JavaScript components built with [React](https://reactjs.org), effectively turning SSG-generated pages into Single Page Application ([SPA](https://en.wikipedia.org/wiki/Single-page_application)) pages.
 
-Next.js takes it to the next level by providing smooth client-side navigation using JavaScript routing, so the end result looks and works very fast in the users’ browser. At the same time, static content gives you the best performance when it comes to indexing your website in the search engines like Google.
+Next.js takes it to the next level by providing smooth client-side navigation using JavaScript routing, so the end result looks and works very fast in the users’ browsers. At the same time, static content gives you the best performance when it comes to indexing your website in the search engines like Google.
 
-Usually, this framework is used for all kinds of projects and applications, it can be a customer-facing marketing website, a landing page, a simple Software as a Service (SaaS) tool, or a simple back office dashboard to aggregate and show some internal metrics, or a Content Management System (CMS), the list goes on.
+Usually this framework is used for all kinds of projects and applications, it can be a customer-facing marketing website, a landing page, a Software as a Service (SaaS) tool, a back office dashboard to aggregate and show some internal metrics, or a Content Management System (CMS), the list goes on.
 
 And the majority of them interact with the users and let them perform certain actions within the application after they are authenticated and authorized. That’s where [OAuth](https://en.wikipedia.org/wiki/OAuth) solutions like ZITADEL come in.
 
 ## Prerequisites
 
-*JavaScript* – you need to be comfortable designing both backend and frontend javascript applications.
+*JavaScript* – you need to be comfortable designing both backend and frontend JavaScript applications.
 
 *Node.js* – all the open-source packages in this tutorial are designed for the [node.js](https://nodejs.org/en/) runtime environment.  Make sure you have the most recent one installed on your workstation.
 
-*React* – you need to know the basic concepts behind [React.js](https://reactjs.org) and its syntax subset called [*JSX*](https://reactjs.org/docs/introducing-jsx.html)
+*React.js* – you need to know the basic concepts behind [React.js](https://reactjs.org) and its syntax subset called [*JSX*](https://reactjs.org/docs/introducing-jsx.html).
 
 [*Next.js*](https://nextjs.org) – the SSG/SSR framework that connects all of the libraries together.
 
@@ -191,7 +191,7 @@ For the client side, let's head to `pages` and edit `pages/index.js`.
 Add the following content to your `index.js` page:
 
 ```javascript
-import { signIn, signOut, useSession } from 'next-auth/client';
+import { signIn, signOut, useSession } from "next-auth/react"
 
 const callbackUrl = 'http://localhost:3000/profile'
 

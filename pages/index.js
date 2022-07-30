@@ -1,4 +1,4 @@
-import { signIn, signOut, useSession } from 'next-auth/client';
+import { signIn, signOut, useSession } from "next-auth/react"
 
 const callbackUrl = 'http://localhost:3000/profile'
 
