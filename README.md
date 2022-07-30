@@ -78,19 +78,43 @@ Let’s continue and set up a new account on ZITADEL, so we can use credential k
 
 Head to [https://zitadel.cloud](https://zitadel.cloud) and create a new account:
 
+1. Sign up form on zitadel.cloud
+
 ![Sign up form on zitadel.cloud](https://i.imgur.com/raEHpOa.png)
+
+2. ZITADEL organisation has been created
+
 ![ZITADEL organisation has been created](https://i.imgur.com/2MjHAwm.png)
+
+3. Activate user account
+
 ![Activate user account](https://i.imgur.com/wCDTwT2.png)
+
+4. User activated
+
 ![User activated](https://i.imgur.com/DAoV3LS.png)
+
+5. ⚠️ Skip multifactor set up for now, but activate it before going to **production**!
 ![Skip multifactor set up for now, but activate it before going to production!](https://i.imgur.com/eNcKjGl.png)
+
+6. The view inside ZITADEL dashboard
+
 ![The view inside ZITADEL dashboard](https://i.imgur.com/IO5SOb8.png)
 
-Click on `+New` and create a new instance:
+7. Click on `+New` and create a new instance:
+
 ![Creating new instance called `zitadel-instance`](https://i.imgur.com/M4oCkq9.png)
+
+8. Confirming new instance
+
 ![Confirming new instance](https://i.imgur.com/ejipzab.png)
+
+9. New instance has been created
+
 ![New instance has been created](https://i.imgur.com/NYXNuKw.png)
 
-Click on `go to my instance`
+10. Click on `go to my instance`
+
 ![Overview of a newly created instance](https://i.imgur.com/5bhrJOV.png)
 
 Now grab instance's doomain name from a previous screenshot, it should have this format `https:/[your-domain]-[random-string].zitadel.cloud` and in my example it is `https://zitadel-instance-w2iqk1.zitadel.cloud`.
