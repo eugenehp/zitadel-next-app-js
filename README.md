@@ -26,7 +26,7 @@ And the majority of them interact with the users and let them perform certain ac
 
 *JavaScript* – you need to be comfortable designing both backend and frontend JavaScript applications.
 
-*Node.js* – all the open-source packages in this tutorial are designed for the [node.js](https://nodejs.org/en/) runtime environment.  Make sure you have the most recent one installed on your workstation.
+*Node.js* – all the open-source packages in this tutorial are designed for the [node.js](https://nodejs.org/en/) runtime environment.  Make sure you have the most recent version installed on your workstation.
 
 *React.js* – you need to know the basic concepts behind [React.js](https://reactjs.org) and its syntax subset called [*JSX*](https://reactjs.org/docs/introducing-jsx.html).
 
@@ -36,9 +36,9 @@ Basic understanding of the *authentication* and *authorization* concepts, ideall
 
 ## How to Build a simple Next.js Application with ZITADEL
 
-### Setting up Next.js Project
+### Setting up a Next.js Project
 
-In this tutorial, we will focus on setting up the Next.js boilerplate using the official javascript template provided by them. We will use the `npm` tool, but you can also use other package managers like `yarn` or `pnpm`.
+In this tutorial, we will focus on setting up the Next.js boilerplate using the official javascript template. We will use the `npm` tool, but you can also use other package managers like `yarn` or `pnpm`.
 
 Let’s start by creating the application using `create-next-app`:
 
@@ -121,12 +121,11 @@ NEXTAUTH_URL=http://localhost:3000
 ZITADEL_CLIENT_ID=[yourClientId]
 ZITADEL_ISSUER=https:/[your-domain]-[random-string].zitadel.cloud
 ```
+which stands for:
 
-Let's go line by line:
-
-* `NEXTAUTH_URL` – is the URL where the user will be redirected after authentication by ZITADEL.
-* `ZITADEL_CLIENT_ID` – client id you can get from ZITADEL instance's interface, in the last screenshot it was set to `172197259117592833`.
-* `ZITADEL_ISSUER` – as already mentioned above, it's an url structured like `https://zitadel-instance-w2iqk1.zitadel.cloud`.
+* `NEXTAUTH_URL` – is the URL where the user will be redirected after authentification by ZITADEL.
+* `ZITADEL_CLIENT_ID` – client ID you can get from ZITADEL instance's interface, in the last screenshot it was set to `172197259117592833`.
+* `ZITADEL_ISSUER` – as mentioned above, it's an URL structured like `https://zitadel-instance-w2iqk1.zitadel.cloud`.
 
 ### What is the Proof Key for Code Exchange
 
@@ -138,7 +137,7 @@ ZITADEL is a fully compliant OICD/PKCE solution that implements the entire flow 
 
 ### Implementing Authentication Flow using Next-Auth and ZITADEL provider
 
-Go to `pages/api` and create `auth` directory and create a file `pages/api/auth/[...nextauth].js` with the following configuration of the `next-auth` [Custom Provider](https://next-auth.js.org/configuration/providers/oauth#using-a-custom-provider):
+Go to `pages/api` , create `auth` directory and then create a file `pages/api/auth/[...nextauth].js` with the following configuration of the `next-auth` [Custom Provider](https://next-auth.js.org/configuration/providers/oauth#using-a-custom-provider):
 
 ```javascript
 import NextAuth from "next-auth";
@@ -183,7 +182,7 @@ export default NextAuth({
 
 Now Next.js will listen on `http://localhost:3000/api/auth/callback/<provider-name>` which is `http://localhost:3000/api/auth/callback/zitadel`
 
-I recommend using the Authentication Code flow secured by PKCE for the Authentication flow. To be able to connect to ZITADEL, navigate to your Console Projects, create or select an existing project and add your app selecting WEB, then PKCE, and then add `http://localhost:3000/api/auth/callback/zitadel` as a redirect URL to your app.
+I recommend using the Authentication Code flow secured by PKCE for the Authentication flow. To be able to connect to ZITADEL, navigate to your Console Projects, create or select an existing project, add your app selecting WEB, then PKCE, and then add `http://localhost:3000/api/auth/callback/zitadel` as a redirect URL to your app.
 
 ### Implementing OpenID Connect Flow on the Client Side
 
@@ -249,7 +248,7 @@ export default function Profile() {
 
 ### Getting Everything Together
 
-Great job, you made it so far! Let's recap what you've done so far.
+Great job! Let's recap what you've done so far.
 
 1. You installed `next` and `next-auth`.
 
