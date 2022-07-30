@@ -2,33 +2,33 @@
 
 ## Introduction
 
-[Next.js](https://nextjs.org) is a modern JavaScript website framework created and maintained by Vercel. Modern because instead of letting developers build one type of a website, it lets developers design Single Page Application ([SPA](https://en.wikipedia.org/wiki/Single-page_application)) with the capabilities of Static Site Generation (SSG) and Server-Side Rendering (SSR) and easily deploy it to different types of hosting providers, including Vercel, Netlify, Amazon Web Services, and so on.
+[Next.js](https://nextjs.org) is a modern JavaScript website framework created and maintained by Vercel. Modern because instead of letting developers build one type of a website, it lets developers design Single Page Application ([SPA](https://en.wikipedia.org/wiki/Single-page_application)) with the capabilities of Static Site Generation (SSG) and Server-Side Rendering (SSR) and deploy it to different types of hosting providers, including Vercel, Netlify, Amazon Web Services, and so on.
 
-Going with Next.js will let you focus on your product in place, instead of setting up development infrastructure, Next.js already comes with the development toolkit out of the box, and provides you a development server to easily run code modifications in the browser, while you edit the codebase.
+Going with Next.js will let you focus on your product in place, instead of setting up development infrastructure, Next.js already comes with the development toolkit out of the box and provides you a development server to easily run code modifications in the browser, while you edit the codebase.
 
-Next.js is a modern framework, so it focuses on code optimization and performance optimization for the better User Experience (UX) and Developer Experience (DX). This includes some advanced features like code splitting, Hot Module Replacement ([HMR](https://webpack.js.org/concepts/hot-module-replacement/)) and others.
+Next.js is a modern framework, so it focuses on code optimization and performance optimization for better User Experience (UX) and Developer Experience (DX). This includes some advanced features like code splitting, Hot Module Replacement ([HMR](https://webpack.js.org/concepts/hot-module-replacement/)), and others.
 
-Next.js has a great and large open source community with a rapid release cycle backed by Vercel, as well as a wide ecosystem of the variety of plugins built for Node.js and React, where both are used to deliver highly performant Next.js experience.
+Next.js has a great and large open source community with a rapid release cycle backed by Vercel, as well as a wide ecosystem of a variety of plugins built for Node.js and React, where both are used to deliver a highly performant Next.js experience.
 
-In this tutorial you will learn how to set up a Next.js project using JavaScript and integrate with [ZITADEL Identity management](https://github.com/zitadel/zitadel), an open source version of Auth0, and a secure layer for your web application.
+In this tutorial, you will learn how to set up a Next.js project using JavaScript and integrate with [ZITADEL Identity management](https://github.com/zitadel/zitadel), an open-source version of Auth0, and a security layer for your web application.
 
 ## What is Next.js
 
-Next.js is a hybrid web framework that allows to build statically generated pages and “hydrate” them with client-side JavaScript components built with [React](https://reactjs.org), effectively turning SSG generated pages into Single Page Application ([SPA](https://en.wikipedia.org/wiki/Single-page_application)) pages.
+Next.js is a hybrid web framework that allows building statically generated pages and “hydrate” them with client-side JavaScript components built with [React](https://reactjs.org), effectively turning SSG-generated pages into Single Page Application ([SPA](https://en.wikipedia.org/wiki/Single-page_application)) pages.
 
-Next.js takes it to the next level by providing smooth client side navigation using JavaScript routing, so the end-result looks and works very fast in the users’ browser. At the same time static content gives you best performance when it comes to indexing your website in the search engines like Google.
+Next.js takes it to the next level by providing smooth client-side navigation using JavaScript routing, so the end result looks and works very fast in the users’ browser. At the same time, static content gives you the best performance when it comes to indexing your website in the search engines like Google.
 
-Usually this framework is used for all kinds of projects and applications, it can be customer facing marketing website, or a landing page, or a simple Software as a Service (SaaS) tool, or a simple backoffice dashboard to aggregate and show some internal metrics, or a Content Management System (CMS), the list goes on.
+Usually, this framework is used for all kinds of projects and applications, it can be a customer-facing marketing website, a landing page, a simple Software as a Service (SaaS) tool, or a simple back office dashboard to aggregate and show some internal metrics, or a Content Management System (CMS), the list goes on.
 
-And majority of them interact with the users and let them perform certain actions within the application after they are authenticated and authorized. That’s where [OAuth](https://en.wikipedia.org/wiki/OAuth) solutions like ZITADEL come in.
+And the majority of them interact with the users and let them perform certain actions within the application after they are authenticated and authorized. That’s where [OAuth](https://en.wikipedia.org/wiki/OAuth) solutions like ZITADEL come in.
 
 ## Prerequisites
 
 *JavaScript* – you need to be comfortable designing both backend and frontend javascript applications.
 
-*Node.js* – all the open-source packages in this tutorial designed for the [node.js](https://nodejs.org/en/) runtime environment.  Make sure you have the most recent one installed on your workstation.
+*Node.js* – all the open-source packages in this tutorial are designed for the [node.js](https://nodejs.org/en/) runtime environment.  Make sure you have the most recent one installed on your workstation.
 
-*React* – you need to know basic concepts behind [React.js](https://reactjs.org) and its syntax subset called [*JSX*](https://reactjs.org/docs/introducing-jsx.html)
+*React* – you need to know the basic concepts behind [React.js](https://reactjs.org) and its syntax subset called [*JSX*](https://reactjs.org/docs/introducing-jsx.html)
 
 [*Next.js*](https://nextjs.org) – the SSG/SSR framework that connects all of the libraries together.
 
@@ -38,7 +38,7 @@ Basic understanding of the *authentication* and *authorization* concepts, ideall
 
 ### Setting up Next.js Project
 
-In this tutorial we will focus on setting up Next.js boilerplate using the official javascript template provided by them. We will use the `npm` tool, but you can also use other package managers like `yarn` or `pnpm`.
+In this tutorial, we will focus on setting up the Next.js boilerplate using the official javascript template provided by them. We will use the `npm` tool, but you can also use other package managers like `yarn` or `pnpm`.
 
 Let’s start by creating the application using `create-next-app`:
 
@@ -47,7 +47,7 @@ npx create-next-app@latest
 ```
 
 ![Add the  name of your next.js app](https://i.imgur.com/dCwBGam.png)
-It will ask you to enter the name of the project, in this case I’ve added `zitadel-next-app-js`.
+It will ask you to enter the name of the project, in this case, I’ve added `zitadel-next-app-js`.
 
 Once it’s installed you should be able to see:
 
@@ -82,11 +82,11 @@ Head to [https://zitadel.cloud](https://zitadel.cloud) and create a new account:
 
 ![Sign up form on zitadel.cloud](https://i.imgur.com/raEHpOa.png)
 
-2. ZITADEL organisation has been created
+2. ZITADEL organization has been created
 
-![ZITADEL organisation has been created](https://i.imgur.com/2MjHAwm.png)
+![ZITADEL organization has been created](https://i.imgur.com/2MjHAwm.png)
 
-3. Activate user account
+3. Activate the user account
 
 ![Activate user account](https://i.imgur.com/wCDTwT2.png)
 
@@ -117,11 +117,11 @@ Head to [https://zitadel.cloud](https://zitadel.cloud) and create a new account:
 
 ![Overview of a newly created instance](https://i.imgur.com/5bhrJOV.png)
 
-Now grab instance's doomain name from a previous screenshot, it should have this format `https:/[your-domain]-[random-string].zitadel.cloud` and in my example it is `https://zitadel-instance-w2iqk1.zitadel.cloud`.
+Now grab the instance's domain name from a previous screenshot, it should have this format `https:/[your-domain]-[random-string].zitadel.cloud` and in my example, it is `https://zitadel-instance-w2iqk1.zitadel.cloud`.
 
 #### Creating environment variables
 
-Create `.env` file in the root directory, make sure to add it to `.gitignore` so it won't be committed to your git reppository, according to the [twelve-factor](https://12factor.net) philosophy.
+Create `.env` file in the root directory, and add it to `.gitignore` so it won't be committed to your git repository, according to the [twelve-factor](https://12factor.net) philosophy.
 
 Your `.env` file should look something like this:
 
@@ -133,17 +133,17 @@ ZITADEL_ISSUER=https:/[your-domain]-[random-string].zitadel.cloud
 
 Let's go line by line:
 
-* `NEXTAUTH_URL` – is the URL where user will be redirected after authentication by ZITADEL.
+* `NEXTAUTH_URL` – is the URL where the user will be redirected after authentication by ZITADEL.
 * `ZITADEL_CLIENT_ID` – client id you can get from ZITADEL instance's interface, in the last screenshot it was set to `172197259117592833`.
 * `ZITADEL_ISSUER` – as already mentioned above, it's an url structured like `https://zitadel-instance-w2iqk1.zitadel.cloud`.
 
-### What is Proof Key for Code Exchange
+### What is the Proof Key for Code Exchange
 
-Proof Key for Code Exchange (PKCE) is a security mechanims that is a part of OAuth 2.x protocol for public clients that outlines secure way of exchanging authorization code between the public clients. If you want to read more about PKCE and its importance, check out how Dropbox engineering team is using it [here](https://dropbox.tech/developers/pkce--what-and-why-)
+Proof Key for Code Exchange (PKCE) is a security mechanism that is a part of the OAuth 2.x protocol for public clients that outlines a secure way of exchanging authorization codes between public clients. If you want to read more about PKCE and its importance, check out how the Dropbox engineering team is using it [here](https://dropbox.tech/developers/pkce--what-and-why-)
 
 ![Dropbox's take on explaining PKCE flow](https://i.imgur.com/IDq2FVg.png)
 
-ZITADEL is a fully compliant OICD/PKCE solution that implemnts entire flow using its infrastructure. On the Next.js side, both frontend and backend legs of OICD/PKCE flow is completed using `next-auth` library.
+ZITADEL is a fully compliant OICD/PKCE solution that implements the entire flow using its infrastructure. On the Next.js side, both frontend and backend legs of OICD/PKCE flow are completed using `next-auth` library.
 
 ### Implementing Authentication Flow using Next-Auth and ZITADEL provider
 
@@ -192,12 +192,12 @@ export default NextAuth({
 
 Now Next.js will listen on `http://localhost:3000/api/auth/callback/<provider-name>` which is `http://localhost:3000/api/auth/callback/zitadel`
 
-I recommend using the Authentication Code flow secured by PKCE for the Authentication flow. To be able to connect to ZITADEL, navigate to your Console Projects, create or select an existing project and add your app selecting WEB, then PKCE, and then add `http://localhost:3000/api/auth/callback/zitadel` as redirect url to your app.
+I recommend using the Authentication Code flow secured by PKCE for the Authentication flow. To be able to connect to ZITADEL, navigate to your Console Projects, create or select an existing project and add your app selecting WEB, then PKCE, and then add `http://localhost:3000/api/auth/callback/zitadel` as a redirect URL to your app.
 
 ### Implementing OpenID Connect Flow on the Client Side
 
 For the client side, let's head to `pages` and edit `pages/index.js`.
-Add following content to your `index.js` page:
+Add the following content to your `index.js` page:
 
 ```javascript
 import { signIn, signOut, useSession } from 'next-auth/client';
@@ -205,20 +205,20 @@ import { signIn, signOut, useSession } from 'next-auth/client';
 const callbackUrl = 'http://localhost:3000/profile'
 
 export default function Page() {
-    const { data: session } = useSession();
+  const { data: session } = useSession();
 
-    return <div>
-      {!session && <>
-          Not signed in <br />
-          <button onClick={() => signIn('zitadel', { callbackUrl })}>
-              Sign in
-          </button>
-      </>}
-      {session && <>
-          Signed in as {session.user.email} <br />
-          <button onClick={() => signOut()}>Sign out</button>
-      </>}
-    </div>
+ return <div>
+  {!session && <>
+    Not signed in <br />
+    <button onClick={() => signIn('zitadel', { callbackUrl })}>
+      Sign in
+    </button>
+  </>}
+  {session && <>
+    Signed in as {session.user.email} <br />
+    <button onClick={() => signOut()}>Sign out</button>
+  </>}
+ </div>
 }
 ```
 
@@ -228,17 +228,17 @@ Now to make `useSession` work, we will need to enhance `pages/_app.js` with the 
 import { SessionProvider } from "next-auth/react";
 
 function App({ Component, pageProps }) {
-  return (
-    <SessionProvider session={pageProps.session}>
-      <Component {...pageProps} />
-    </SessionProvider>
-  );
+return (
+  <SessionProvider session={pageProps.session}>
+    <Component {...pageProps} />
+  </SessionProvider>
+);
 }
 
 export default App;
 ```
 
-And finally let's create `pages/profile.js` with the content for the `http://localhost:3000/profile` page:
+And finally, let's create `pages/profile.js` with the content for the `http://localhost:3000/profile` page:
 
 ```javascript
 import Link from "next/link";
@@ -264,17 +264,17 @@ Great job, you made it so far! Let's recap what you've done so far.
 
 2. You created `api` route called `auth/[...nextauth].js`
 
-3. You created `profile` page that requird authentication.
+3. You created `profile` page that requires authentication.
 
 4. You enhanced `_app.js` to inject `SessionProvider` into all Next.js pages, including `profile.js` and `index.js` pages.
 
-5. Inside main page `index.js` you added condintional buttons to `Sign In` and `Sign out`.
+5. Inside the main page `index.js` you added conditional buttons to `Sign In` and `Sign out`.
 
 **Here's a model of how all pieces you added work together:**
 
 ![Next.js ZITADEL Architecture](https://i.imgur.com/wyLs6uD.png)
 
-**Here's a step-by-step description:**
+**Here's a detailed description:**
 
 1. User goes to http://localhost:3000/
 
@@ -292,8 +292,8 @@ Great job, you made it so far! Let's recap what you've done so far.
 
 Congratulations, you did it!
 
-In this tutorial you have learned how to set up a Next.js project and integrate with ZITADEL Identity management, using [OICF](https://openid.net/connect/) flow as a part of [PKCE](https://oauth.net/2/pkce/) using standard [RFC 7636](https://datatracker.ietf.org/doc/html/rfc7636) implementation via open source library `next-auth` inside Next.js full-stack project.
+In this tutorial you have learned how to set up a Next.js project and integrate it with ZITADEL Identity management, using [OICF](https://openid.net/connect/) flow as a part of [PKCE](https://oauth.net/2/pkce/) using standard [RFC 7636](https://datatracker.ietf.org/doc/html/rfc7636) implementation via open source library `next-auth` inside Next.js full-stack project.
 
 ZITADEL is OpenID-certified open-source implementation of a group of security features like secure login, self-service, [OpenID Connect](https://github.com/zitadel/oidc), [OAuth2.x](https://oauth.net/2/v), [SAML2](http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html), branding, Passwordless with [FIDO2](https://fidoalliance.org/fido2/), [OTP](https://en.wikipedia.org/wiki/One-time_password), [U2F](https://en.wikipedia.org/wiki/Universal_2nd_Factor), and an [unlimited audit trail](https://github.com/zitadel/zitadel) to improve the life of developers.
 
-Awesome, now go build someting cool with **ZITADEL**!
+Fantastic, now go build something cool with **ZITADEL**!
