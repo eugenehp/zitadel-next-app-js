@@ -16,6 +16,10 @@ In this tutorial, you will learn how to set up a Next.js project using JavaScrip
 
 Next.js is a hybrid web framework that allows building statically generated pages and “hydrate” them with client-side JavaScript components built with [React](https://reactjs.org), effectively turning SSG-generated pages into Single Page Application ([SPA](https://en.wikipedia.org/wiki/Single-page_application)) pages.
 
+> Statically generated pages are still reactive: Next.js will hydrate your application client-side to give it full interactivity.
+
+*from [Next.js documentation](https://nextjs.org/docs/advanced-features/automatic-static-optimization)*
+
 Next.js takes it to the next level by providing smooth client-side navigation using JavaScript routing, so the end result looks and works very fast in the users’ browsers. At the same time, static content gives you the best performance when it comes to indexing your website in the search engines like Google.
 
 Usually this framework is used for all kinds of projects and applications, it can be a customer-facing marketing website, a landing page, a Software as a Service (SaaS) tool, a back office dashboard to aggregate and show some internal metrics, or a Content Management System (CMS), the list goes on.
