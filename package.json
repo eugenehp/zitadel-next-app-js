@@ -1,6 +1,6 @@
 {
   "name": "zitadel-next-app-js",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -22,5 +22,9 @@
   "author": {
     "name" : "Eugene Hauptmann",
     "url" : "http://github.com/eugenehp/"
-  }
+  },
+  "license": "MIT",
+  "repository": {"url": "https://github.com/eugenehp/zitadel-next-app-js"},
+  "bugs": {"url": "https://github.com/eugenehp/zitadel-next-app-js/issues"},
+  "homepage": "https://github.com/eugenehp/zitadel-next-app-js"
 }

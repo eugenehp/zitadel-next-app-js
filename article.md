@@ -1,5 +1,13 @@
 # Full stack ZITADEL integration with NextJS (JS)
 
+**TL;DR**: Create `.env` file and add ZITADEL [details].(#creating-environment-variables)
+
+```shell
+git clone https://github.com/eugenehp/zitadel-next-app-js
+cd zitadel-next-app-js
+next run
+```
+
 ## Introduction
 
 [Next.js](https://nextjs.org) is a modern JavaScript website framework created and maintained by Vercel. it  is modern because instead of letting developers build one type of a website, it lets developers design Single Page Application ([SPA](https://en.wikipedia.org/wiki/Single-page_application)) with the capabilities of Static Site Generation (SSG) and Server-Side Rendering (SSR) and deploy it to different types of hosting providers, including Vercel, Netlify, Amazon Web Services, and so on.
